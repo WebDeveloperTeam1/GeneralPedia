@@ -1,9 +1,32 @@
 import React from 'react';
-import '../component/App.css';
+import './App.css';
 
 import '../bootstrap/dist/css/bootstrap.min.css';
 
 class Sections extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            recentPost:'',
+            readPost:'',
+            comment:''
+        }
+    }
+    handlePost = event =>{
+        this.setState({
+            recentPost:event.target.value
+        })
+    }
+    handleReadPost = event =>{
+        this.setState({
+            readPost:event.target.value
+        })
+    }    
+    handleComment = event =>{
+        this.setState({
+            comment:event.target.value
+        })
+    }
     render(){
         return( 
             <div className="main col-11">
@@ -103,7 +126,7 @@ class Sections extends React.Component{
                     </div>
                 </div>
                 <div className="row second-row">
-                    <div classNameName = "col-2"></div>
+                    <div className = "col-2"></div>
                     <div className="col-3">
                         <section id="recently-commented">
                             <div className="card">

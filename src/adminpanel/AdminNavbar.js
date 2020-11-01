@@ -1,5 +1,5 @@
 import React, {props} from 'react';
-import '../component/App.css';
+import './App.css';
 
 import '../bootstrap/dist/css/bootstrap.min.css';
 class AdminNavbar extends React.Component{

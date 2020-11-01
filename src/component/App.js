@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
+
 import HomePage from './HomePage';
-import NavbarComponent from './NavbarComponent';
+import UserPanel from '../userpanel/UserPanel';
 import AdminPanel from '../adminpanel/AdminPanel';
-import AdminNavbar from '../adminpanel/AdminNavbar';
 
 class App extends React.Component{
   constructor (){
@@ -16,7 +16,7 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <AdminPanel/>
+          <HomePage/>
       </div>
     );
   }
